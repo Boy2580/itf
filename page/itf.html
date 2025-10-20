@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบทดสอบความรู้พื้นฐานด้านเทคโนโลยีสารสนเทศ (IT Fundamentals)</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>แบบทดสอบความรู้พื้นฐานด้านเทคโนโลยีสารสนเทศ</h1>
+        <p>รวบรวมเนื้อหาสำคัญจาก 7 เอกสาร PDF</p>
+        <button id="randomize-btn">สุ่มคำถาม 20 ข้อใหม่</button>
+        <div id="quiz"></div>
+
+        <button id="submit">ส่งคำตอบและดูผลลัพธ์</button>
+        
+        <div id="results" class="results-hidden">
+            <h2>ผลลัพธ์ของคุณ</h2>
+            <p id="score-text"></p>
+            <button id="restart" onclick="location.reload()">เริ่มทำใหม่</button>
+        </div>
+    </div>
+    
+    <script src="/script.js"></script>
+</body>
+<script src="script.js"></script>
+</html>

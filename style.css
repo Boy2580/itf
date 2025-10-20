@@ -1,0 +1,129 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.quiz-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+}
+
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.question {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.question-text {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.options label {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.options label:hover {
+    background-color: #f0f0f0;
+    border-color: #bbb;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #007bff;
+}
+
+/* ปุ่มหลัก */
+#submit, #restart {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit:hover, #restart:hover {
+    background-color: #218838;
+}
+
+/* ส่วนแสดงผลลัพธ์ */
+#results {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #007bff;
+    text-align: center;
+}
+
+.results-hidden {
+    display: none;
+}
+
+#score-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+/* สีสำหรับเฉลย */
+.correct {
+    background-color: #d4edda !important; /* เขียวอ่อน */
+    border-color: #c3e6cb !important;
+}
+
+.incorrect {
+    background-color: #f8d7da !important; /* แดงอ่อน */
+    border-color: #f5c6cb !important;
+}
+#randomize-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        #randomize-btn {
+            background-color: #28a745; /* สีเขียวสำหรับปุ่มสุ่ม */
+            margin-bottom: 30px;
+        }

@@ -1,11 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ITF Quiz Hub - ศูนย์รวมแบบทดสอบ</title>
+    <style>
+        /* ---------------------------------- */
+        /* CSS Styling */
+        /* ---------------------------------- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f9; /* สีพื้นหลังอ่อนๆ */
+            margin: 0; 
+            padding: 0;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .quiz-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            
+            /* --- การปรับให้ "เต็มช่อง" และ "ไม่เอาตรงกลาง" --- */
+            width: auto; /* ให้กล่องขยายตามพื้นที่ที่มี */
+            max-width: 1200px; /* กำหนดความกว้างสูงสุดเพื่อให้อ่านง่ายบนจอขนาดใหญ่ */
+            
+            margin-top: 40px; /* เว้นระยะจากด้านบน */
+            margin-left: 5%; /* เว้นระยะจากขอบซ้าย 5% */
+            margin-right: 5%; /* เว้นระยะจากขอบขวา 5% (ทำให้กล่องกว้าง 90% ของหน้าจอ) */
+
+            text-align: left;
+        }
+
+        h1 {
+            color: #007bff; 
+            margin-bottom: 30px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            text-align: left; 
+        }
+
+        /* Styling for the links (making them look like buttons) */
+        a {
+            display: block; 
+            text-decoration: none;
+            color: #ffffff; 
+            background-color: #28a745; 
+            padding: 15px 25px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center; 
+        }
+
+        /* Hover effect */
+        a:hover {
+            background-color: #218838; 
+            transform: translateY(-2px); 
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        /* แยกสีปุ่มเพื่อให้เห็นความแตกต่างของเนื้อหา */
+        a:first-of-type {
+            background-color: #007bff; /* ปุ่มแรกสีน้ำเงิน */
+        }
+        
+        a:first-of-type:hover {
+            background-color: #0056b3; /* ปุ่มแรก Hover สีน้ำเงินเข้ม */
+        }
+
+    </style>
 </head>
 <body>
-    <a href="/page/itf.html">itf test</a>
+    <div class="quiz-container">
+        <h1>ITF แบบทดสอบความรู้พื้นฐาน</h1>
+        
+        <a href="/page/itf.html">📚 ITF Test เรื่องทั่วไป 7 บท (20 ข้อ)</a>
+        
+        <a href="/page/ipad.html">💻 ITF Test เรื่อง IP Address (20 ข้อ)</a>
+        
+    </div>
 </body>
 </html>
